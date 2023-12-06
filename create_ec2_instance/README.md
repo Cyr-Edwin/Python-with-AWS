@@ -1,5 +1,5 @@
 ## Create EC2 Instance with Python
-h6> Install Modules</h6>
+<h6> Install Modules</h6>
 
 > pip install awscli
 
