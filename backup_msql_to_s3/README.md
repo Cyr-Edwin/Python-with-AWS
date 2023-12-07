@@ -99,7 +99,7 @@ print(datetime.date.today())
    - YOUR SECRET KEY
    - DEFAULT REGION
 
-2. Write the code 
+2. Write  code 
 ```
 # import the module
 import boto3
