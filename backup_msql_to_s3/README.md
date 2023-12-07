@@ -93,12 +93,12 @@ print(datetime.date.today())
 
 <h6> How to use it?</h6>
 
-* Set up credentions:
+1. Set up credentions:
  - YOUR ACCESS KEY
  - YOUR SECRET KEY
  - DEFAULT REGION
 
-* Write the code 
+2. Write the code 
 ```
 # import the module
 import boto3
