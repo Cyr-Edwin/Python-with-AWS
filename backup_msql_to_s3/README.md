@@ -94,9 +94,10 @@ print(datetime.date.today())
 <h6> How to use it?</h6>
 
 1. Set up credentions:
- - YOUR ACCESS KEY
- - YOUR SECRET KEY
- - DEFAULT REGION
+
+   - YOUR ACCESS KEY
+   - YOUR SECRET KEY
+   - DEFAULT REGION
 
 2. Write the code 
 ```
