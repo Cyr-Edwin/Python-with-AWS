@@ -109,3 +109,21 @@ s3 = boto3.service('s3')
 for bucket in s3.buckets.all():
     print(bucket.name)
 ```
+<h6> S3 Bucket Policy</h6>
+
+```
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1702315882050",
+    "Statement": [
+        {
+            "Sid": "Stmt1702315874887",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::BUCKET_NAME/*"
+        }
+    ]
+}
+```
+
