@@ -121,7 +121,7 @@ for bucket in s3.buckets.all():
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:PutObject",
-            "Resource": "arn:aws:s3:::BUCKET_NAME/*"
+            "Resource": "arn:aws:s3:::YOUR_BUCKET_NAME/*"
         }
     ]
 }
