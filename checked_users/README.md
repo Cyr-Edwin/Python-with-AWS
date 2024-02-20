@@ -1,4 +1,4 @@
-## Creat a Lambda function to periodically check AWS IAM users, verify their attributes, delete incorrect users, and notify the security team via email.
+## Create a Lambda function to periodically check AWS IAM users, verify their attributes, delete incorrect users, and notify the security team via email.
 
 <h6>Services used</h6>
 
@@ -84,3 +84,31 @@
  * Role name : **LambdaRoleExcution**
 
 3 - Create Lambda function
+
+4 -  Create the CloudWatch Events on the aws console
+
+   . Create a **Rule**
+
+   . Rule Type:  **Rule with an event pattern**
+
+   . Event source : **AWS events or EventBridge partner events**
+
+   . Creation method: **Use pattern form**
+
+   . Event pattern :
+       . Event source : **AWS Services**
+       . AWS service : **IAM**
+       . Event type: **All Events**
+
+   . Target types :  **AWS service**
+
+   . Select a target : **Lambda Function**
+
+   . Function: **Name of your Lambda Function**
+
+  5 - Create a **topic** from SNS Service
+     . Type : **Standard**
+
+  6 - Create Subscription :
+      - Protocol : **Email**
+      - Endpoint : **Your_Email**
