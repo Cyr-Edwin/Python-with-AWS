@@ -18,9 +18,7 @@
        <h6> Specifications</h6>
             
              - Run time: Python.x
-             - Create a new role from AWS policy templates : Policy templates (Amazon S3 object read-only permissions
-S3 and Amazon SNS publish policy
-SNS)
+             - Create a new role from AWS policy templates : Policy templates (Amazon S3 object read-only permissionsS3 and Amazon SNS publish policy SNS)
                - Add Trigger:
                     * source : S3 bucket
                     * Bucket name: Your Bucket Name
