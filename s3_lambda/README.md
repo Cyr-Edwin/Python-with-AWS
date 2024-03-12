@@ -29,41 +29,28 @@ this project enlights the use of Serverless Compute in a  Even-driven architectu
 
 ##### III Create a Policy
 
-* The policy below allows to read from S3,  write and tag logs  into CloudWatch logs
+* The policy below allows to read an object from S3,  write logs into CloudWatch logs
 ```
 {
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
-                "logs:DisassociateKmsKey",
-                "logs:DeleteSubscriptionFilter",
-                "logs:UntagLogGroup",
-                "logs:DeleteLogGroup",
-                "logs:DeleteLogStream",
-                "logs:PutLogEvents",
-                "logs:CreateExportTask",
-                "logs:PutMetricFilter",
                 "s3:GetObject",
+                "logs:CreateLogGroup",
                 "logs:CreateLogStream",
-                "logs:DeleteMetricFilter",
-                "logs:TagLogGroup",
-                "logs:DeleteRetentionPolicy",
-                "logs:AssociateKmsKey",
-                "logs:PutSubscriptionFilter",
-                "logs:PutRetentionPolicy"
+                "logs:PutLogEvents"
             ],
             "Resource": [
-                "arn:aws:logs:*:511516667116:log-group:*:log-stream:*",
-                "arn:aws:logs:*:511516667116:log-group:*",
-                "arn:aws:s3:::bucket000001111111111/*"
-    
+                "arn:aws:s3:::your-bucket-name/*",
+                "arn:aws:logs:*:*:*"
             ]
         }
     ]
 }
+
+
 ```
 
 ##### IV- Create Role
