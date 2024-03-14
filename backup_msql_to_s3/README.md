@@ -1,5 +1,19 @@
 ## Backup database(MSQL) and Upload it to Amazon S3 (hourly or daily)
 
+## Architecture Digram
+
+### Steps
+
+### I- Set up Environment
+
+1 - Install MySQL (https://www.youtube.com/watch?v=u96rVINbAUI&t=188s)
+![alt text](image.png)
+2 - Create a new Database , a Table , and insert data
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+
 <h6>Steps to follow</h6>
 
 * Create a S3 bucket on AWS
