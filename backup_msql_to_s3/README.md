@@ -7,11 +7,24 @@
 ### I- Set up Environment
 
 1 - Install MySQL (https://www.youtube.com/watch?v=u96rVINbAUI&t=188s)
+2 - Create a new Database , a Table , and insert data (https://www.youtube.com/watch?v=wALCw0F8e9M)
 ![alt text](image.png)
-2 - Create a new Database , a Table , and insert data
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+
+### II- Install Modules
+
+1- boto3 
+> pip install boto3
+2- subprocess 
+> pip install subprocess
+3- optparse
+> pip install optparse
+
+### II Create a S3 bucket
 
 
 <h6>Steps to follow</h6>

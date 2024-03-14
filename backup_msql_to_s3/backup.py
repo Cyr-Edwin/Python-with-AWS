@@ -4,7 +4,7 @@ import subprocess
 import argparse
 import datetime
 import boto3
-
+'''
 #####################################################
 # Example:
 
@@ -45,4 +45,5 @@ if choice =="daily" or choice=="hourly":
     s3.upload_file(backup_file , args.bucket_name , backup_file )
 
 else:
-    raise ValueError ("Invalid option!")
+    raise ValueError ("Invalid option!")'''
+subprocess.run('ls')
