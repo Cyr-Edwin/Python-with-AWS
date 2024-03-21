@@ -4,6 +4,8 @@ import subprocess
 import argparse
 import datetime
 import boto3
+import mysql.connector
+cnx = mysql.connector.connect(user='root', password='test', host='localhost', database='s3_backup')
 '''
 #####################################################
 # Example:
@@ -46,4 +48,4 @@ if choice =="daily" or choice=="hourly":
 
 else:
     raise ValueError ("Invalid option!")'''
-subprocess.run('ls')
+#subprocess.run('ls')
